@@ -1,0 +1,64 @@
+.heading-container {
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    color:darkblue;
+  
+  }
+  #detail {
+    display: flex;
+    justify-content: flex-start;
+    color: blue;
+    background-color: azure;
+  }
+  .Select-box {
+    display: flex;
+    margin: 10px;
+    padding: 17px;
+  }
+  .label {
+    padding: 8px 13px;
+  }
+  .select-option {
+    width: 140px;
+  }
+  span {
+    color: black;
+  }
+  th {
+    padding: 30px 30px;
+  }
+  
+  /*.table-content {
+    border: 1px solid black;
+  }
+  
+  .table-row {
+    border: 1px solid black;
+  }
+  #table{
+    border: 1px solid black;
+  }*/
+  td{
+    border: 1px solid black;
+    display: flex-row;
+    align-items: center;
+  }
+  
+  .btn-container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+  }
+  .btn{
+    width: 150px;
+    border: 0px;
+    margin: 7px 0 5px 7px;
+    padding: 3px 0 6px 0;
+    cursor: hand;
+    cursor: pointer;
+    color: #2C2C2C;
+    font-family: Tahoma;
+    font-size: 18px;
+    border-radius: 3px;
+  }

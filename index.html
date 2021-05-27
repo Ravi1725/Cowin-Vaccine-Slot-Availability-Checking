@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cowin.css" />
+    <title>CoWIN-Vaccination Slot Checking</title>
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1>CoWIN Vaccination Slot Availablility</h1>
+    </div>
+    <span class="btn-container">
+        <button
+          class="btn"
+          onclick="availablity()"
+        >
+          Check-Available
+        </button>
+      </span>
+    <div id="detail">
+      <h3>
+        The CoWIN APIs are geo-fenced so sometimes you may not see an output!
+        Please try after sometime
+      </h3>
+      
+    </div>
+    <div class="Select-box">
+      <label class="label">Select Date Range</label>
+      <input
+        type="number"
+        value="Age"
+        placeholder="1-100 Days"
+        id="data-date"
+        min="1"
+        max="100"
+        class="select-option"
+        size="100px"
+        required
+      />
+    </div>
+    <div class="Select-box">
+      <label class="label">Select pincode</label>
+      <input
+        type="number"
+        value="pincode"
+        id="data-pin"
+        placeholder="PIN"
+        min="100000"
+        required
+      />
+      <label class="label">Select minimum Age</label>
+      <input
+        type="number"
+        value="Age"
+        id="data-age"
+        placeholder="Age"
+        min="1"
+        required
+      />
+      <label class="label">Select Free/Paid </label>
+      <select class="select-option" id="data-free" required>
+        <option value="Free">Free</option>
+        <option value="Paid">Paid</option>
+      </select>
+      <label class="label">Select Availablility</label>
+      <select class="select-option" id="data-available" required>
+        <option value="Available">Availablility</option>
+      </select>
+    </div>
+    
+    <div>
+      <table id="table">
+        <tr class="table-row">
+          <th class="table-content">Date</th>
+          <th class="table-content">Available Capacity</th>
+          <th class="table-content">Vaccine</th>
+          <th class="table-content">Min Age</th>
+          <th class="table-content">pincode</th>
+          <th class="table-content">Hospital Name</th>
+          <th class="table-content">State</th>
+          <th class="table-content">District</th>
+          <th class="table-content">Block Name</th>
+          <th class="table-content">Fees</th>
+          <th class="table-content">Availability</th>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="./cowin-new.js"></script>
+  </body>
+</html>
